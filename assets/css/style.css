@@ -31,6 +31,12 @@ html {
 	padding-left: 50px;
 }
 
+#navbar-toggler {
+	position: absolute;
+	top: 20%;
+	right: 5%;
+}
+
 .show-element {
   -webkit-animation-name: myAnimation;
   -webkit-animation-duration:3s;
@@ -405,7 +411,7 @@ h2 {
 #dog {
 	width: 13%;
 	position: absolute;
-	top: 85vh;
+	top: 90vh;
 	left: 25px;
 	/*z-index: 12;	*/
 }
