@@ -79,11 +79,21 @@ html {
 	display: none;
 }
 
-#contact-scr div {
+#contact-scr .info {
 	background-color: rgba(20, 17, 16, .7);
 	border-radius: 10px;
 	color: white;
+	height: auto;
 	width: 100%;
+}
+
+#contact-scr a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#contact-scr .col-md-6 {
+	text-align: center;
 }
 
 #projects-scr div {
@@ -288,7 +298,7 @@ main p,
 }
 
 .info i {
-	font-size: 2em;
+	font-size: 4em;
 	padding-left: 20px;
 	padding-top: 20px;
 	padding-right: 30px;
@@ -383,11 +393,6 @@ h2 {
 	background-color: rgba(20, 17, 16, .7);
 	border-radius: 10px;
 	font-size: 1em;
-}
-
-.info i {
-	font-size: 1em;
-	padding-left: 40px;
 }
 
 .btn-scroll {
@@ -633,10 +638,17 @@ h2 {
 		border-radius: 10px;
 	}
 
+	.info {
+		margin-top: 5px;
+	}
+
+	.info i {
+		font-size: 3em;
+	}
+
 	#contact-scr div {
 		height: auto;
-		margin-top: 10vh;
-		padding-bottom: 20px;
+		/*padding-bottom: 20px;*/
 	}
 
 	#contact-scr .contact-now {
