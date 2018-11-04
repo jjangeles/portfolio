@@ -90,11 +90,61 @@ html {
 	background-color: white;
 	border-radius: 10px;
 	color: black;
+	min-height: 65vh;
 }
 
 #projects-scr img {
-	width: 100%;
+	width: 60%;
 	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+/*.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: black;
+}*/
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 20px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+
+.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    margin: 20px;
+    background-color: #030303;
+}
+
+.weblink {
+	color: black;
 }
 
 .animated {
@@ -147,6 +197,7 @@ main p,
 }
 
 .dropdown {
+	color: rgba(0, 255, 0, 1)
 	margin-left: 10px;
 }
 
@@ -174,6 +225,12 @@ main p,
 .projects,
 .contact {
 	height: 100vh;
+}
+
+#contact-scr .contact-now {
+	text-decoration: none;
+	color: rgba(0, 255, 0, 1);
+	display: none;
 }
 
 .proj-text {
@@ -338,8 +395,15 @@ h2 {
 }
 
 .nav-item {
-	width: 80px;
+	width: 70px;
+	margin-right: 5px;
 }
+
+.nav-item a {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+} 
 
 .dropdown {
 	margin-left: 0;
@@ -573,6 +637,10 @@ h2 {
 		height: auto;
 		margin-top: 10vh;
 		padding-bottom: 20px;
+	}
+
+	#contact-scr .contact-now {
+		display: block;
 	}
 
 }
